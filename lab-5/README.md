@@ -35,7 +35,7 @@ Microsoft (R) Segmented Executable Linker Version 5.31.009 Jul 13 1992
 Copyright (C) Microsoft Corp 1984-1992.  All rights reserved.
 
 Object Modules [.obj]: lab5.obj/t
-Run File [lab4.com]: "lab5.com"
+Run File [lab5.com]: "lab5.com"
 List File [nul.map]: NUL
 Libraries [.lib]:
 Definitions File [nul.def]:

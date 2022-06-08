@@ -1,14 +1,14 @@
-## Lab 6: DOS Interrupts – File Access
+## Lab 7: DOS Interrupts – File Access 2
 
 ### Task
 
 Write an ALP that does the following 
 
-Create 2 new files. To `File_1`, write your Full Name, and to `File_2`, write your ID.  Read and append the contents of `File_2` to `File_1`. Display the modified contents of `File_1`. Finally, close both files. 
+Create 2 new files. To `File_1`, write your First Name, Last name and ID on 3 different lines. Copy the contents of `File_1` to `File_2`, and display the contents of `File_2`. Finally, close both files. 
 
 Your submission should be in the form of `zip` and having 
 - Your code 
-- Snapshots of final display of name and id (i.e. display of modified content of `File_1`)
+- Snapshots of final display of first name, last name and id (i.e. display of modified content of `File_1`)
 
 ### Code
 Mount the directory containing the `MASM` folder in **DOSBOX**.
@@ -20,29 +20,32 @@ Z:\> e:
 ```
 After mounting the directory, create the executable using following commands
 ```
-E:\> ml lab6.asm
+E:\> ml lab7.asm
 Microsoft (R) Macro Assembler Version 6.11
 Copyright (C) Microsoft Corp 1981-1993.  All rights reserved.
 
-    Assembling: lab6.asm
+    Assembling: lab7.asm
 
 Microsoft (R) Segmented Executable Linker Version 5.31.009 Jul 13 1992
 Copyright (C) Microsoft Corp 1984-1992.  All rights reserved.
 
-Object Modules [.obj]: lab6.obj/t
-Run File [lab6.com]: "lab6.com"
+Object Modules [.obj]: lab7.obj/t
+Run File [lab7.com]: "lab7.com"
 List File [nul.map]: NUL
 Libraries [.lib]:
 Definitions File [nul.def]:
 ```
-After the `.com` executable is generated, simply enter `lab6.com`.
+After the `.com` executable is generated, simply enter `lab7.com`.
 
 ```dosbox
-E:\> lab6.com
-FILE_1 INITIAL:
-Dhruv Rawat
-FILE_1 UPDATED:
-Dhruv Rawat
+E:\> lab7.com
+FILE_1 CONTENTS:
+Dhruv
+Rawat
+2019B3A70537P
+FILE_2 CONTENTS AFTER COPY:
+Dhruv
+Rawat
 2019B3A70537P
 E:\>
 ```
